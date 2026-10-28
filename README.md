@@ -152,7 +152,7 @@ The default local demo credentials are:
 - Username: `demo_officer`
 - Password: `officer123`
 
-The UI opens in English by default and provides a `English` / `తెలుగు` language switch on the login page and dashboard. The AI analysis endpoint follows the selected language. The password is case-sensitive and includes the final exclamation mark. If the browser shows `Invalid username or password` while the backend log records `POST /api/auth/login 401`, the frontend is reaching the API; the backend is rejecting the values. Check that `backend/.env` has `DEMO_USERNAME=demo_officer` and `DEMO_PASSWORD=ChangeThisDemoPassword123!`, with no surrounding quotes or extra spaces, then restart Uvicorn. If you intentionally changed either value, use the changed credentials. Never paste your `JWT_SECRET` or API keys into chat or commit `.env` to Git.
+The UI opens in English by default and provides a `English` / `తెలుగు` language switch on the login page and dashboard. The AI analysis endpoint follows the selected language. The password is case-sensitive and includes the final exclamation mark. If the browser shows `Invalid username or password` while the backend log records `POST /api/auth/login 401`, the frontend is reaching the API; the backend is rejecting the values. Check that `backend/.env` has `DEMO_USERNAME=demo_officer` and `DEMO_PASSWORD=officer123`, with no surrounding quotes or extra spaces, then restart Uvicorn. If you intentionally changed either value, use the changed credentials. Never paste your `JWT_SECRET` or API keys into chat or commit `.env` to Git.
 
 ## 9. Run locally with PostgreSQL
 
